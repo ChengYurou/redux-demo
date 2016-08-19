@@ -13,6 +13,7 @@ function render() {
         <App
             value={store.getState()}
             onAdd={()=>store.dispatch({type:'ADD'})}
+            onSub={()=>store.dispatch({type:'SUB'})}
         />,
         document.getElementById('app'))
 }

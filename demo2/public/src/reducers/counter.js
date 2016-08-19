@@ -1,6 +1,10 @@
 export default function (state=0,action) {
-    if(action.type == 'ADD') {
-        state += 1;
+    switch (action.type){
+        case 'ADD':
+            return state + 1;
+        case 'SUB':
+            return state - 1;
+        default:
+            return state;
     }
-    return state;
 }
