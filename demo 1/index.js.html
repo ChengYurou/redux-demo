@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>counter</title>
+    <script src="https://npmcdn.com/redux@latest/dist/redux.min.js"></script>
+</head>
+<body>
+<p>
+    <span id="value">0</span>
+    <button id="add">add</button>
+</p>
+
+<script>
+
+    var store = Redux.createStore(count);
+
+    function count(state,action) {
+        if(state===undefined){
+           return 0;
+        }
+        if(action.type === 'add'){
+            console.log('state:');
+            console.log(state+1);
+
+            return state+1;
+        }
+
+    }
+    
+    var valueC = document.getElementById('value');
+    function render() {
+        console.log('hhhhhhhhhhh'+store.getState());
+        valueC.innerHTML = store.getState();
+    }
+
+    render();
+    store.subscribe(render);
+
+    document.getElementById('add')
+            .addEventListener('click',function () {
+                store.dispatch({type:'add'});
+            })
+    console.log(valueC.innerHTML);
+</script>
+
+</body>
+</html>
