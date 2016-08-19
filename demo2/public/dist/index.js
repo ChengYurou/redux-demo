@@ -139,7 +139,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var isFunction = __webpack_require__(108),
-	    isLength = __webpack_require__(58);
+	    isLength = __webpack_require__(57);
 
 	/**
 	 * Checks if `value` is array-like. A value is considered array-like if it's
@@ -517,8 +517,7 @@ webpackJsonp([1],[
 /* 49 */,
 /* 50 */,
 /* 51 */,
-/* 52 */,
-/* 53 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getNative = __webpack_require__(21),
@@ -531,7 +530,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 54 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var mapCacheClear = __webpack_require__(230),
@@ -569,7 +568,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 55 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var root = __webpack_require__(17);
@@ -581,7 +580,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 56 */
+/* 55 */
 /***/ function(module, exports) {
 
 	/** Used as references for various `Number` constants. */
@@ -609,7 +608,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 57 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var isArrayLikeObject = __webpack_require__(107);
@@ -661,7 +660,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 58 */
+/* 57 */
 /***/ function(module, exports) {
 
 	/** Used as references for various `Number` constants. */
@@ -702,6 +701,7 @@ webpackJsonp([1],[
 
 
 /***/ },
+/* 58 */,
 /* 59 */,
 /* 60 */,
 /* 61 */,
@@ -1150,7 +1150,7 @@ webpackJsonp([1],[
 /* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var MapCache = __webpack_require__(54),
+	var MapCache = __webpack_require__(53),
 	    setCacheAdd = __webpack_require__(239),
 	    setCacheHas = __webpack_require__(240);
 
@@ -2272,7 +2272,7 @@ webpackJsonp([1],[
 /* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
+	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -2286,7 +2286,7 @@ webpackJsonp([1],[
 
 	var _index4 = _interopRequireDefault(_index3);
 
-	var _react2 = __webpack_require__(51);
+	var _react2 = __webpack_require__(50);
 
 	var _react3 = _interopRequireDefault(_react2);
 
@@ -2294,25 +2294,31 @@ webpackJsonp([1],[
 
 	var _index6 = _interopRequireDefault(_index5);
 
-	var _reactDom = __webpack_require__(43);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var _components = {
-	    _component: {}
+	    App: {
+	        displayName: "App"
+	    }
 	};
 
 	var _homeCyrHolidayWorkspaceReduxDemoDemo2Node_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/home/cyr/holiday-workspace/redux-demo/demo2/public/src/components/App.js',
+	    filename: "/home/cyr/holiday-workspace/redux-demo/demo2/public/src/components/App.js",
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 
 	var _homeCyrHolidayWorkspaceReduxDemoDemo2Node_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/home/cyr/holiday-workspace/redux-demo/demo2/public/src/components/App.js',
+	    filename: "/home/cyr/holiday-workspace/redux-demo/demo2/public/src/components/App.js",
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -2324,38 +2330,67 @@ webpackJsonp([1],[
 	    };
 	}
 
-	var App = _wrapComponent('_component')(_react3.default.createClass({
-	    displayName: 'App',
+	var App = _wrapComponent("App")(function (_Component) {
+	    _inherits(App, _Component);
 
+	    function App(props) {
+	        _classCallCheck(this, App);
 
-	    add: function add() {
-	        this.props.onAdd();
-	    },
-	    sub: function sub() {
-	        this.props.onSub();
-	    },
-	    render: function render() {
-	        return _react3.default.createElement(
-	            'div',
-	            null,
-	            _react3.default.createElement(
-	                'span',
-	                { id: 'value' },
-	                this.props.value
-	            ),
-	            _react3.default.createElement(
-	                'button',
-	                { id: 'add', onClick: this.add },
-	                '+'
-	            ),
-	            _react3.default.createElement(
-	                'button',
-	                { id: 'sub', onClick: this.sub },
-	                '-'
-	            )
-	        );
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(App).call(this, props));
 	    }
-	}));
+
+	    _createClass(App, [{
+	        key: "render",
+	        value: function render() {
+	            var _props = this.props;
+	            var value = _props.value;
+	            var onAdd = _props.onAdd;
+	            var onSub = _props.onSub;
+
+	            return _react3.default.createElement(
+	                "div",
+	                null,
+	                _react3.default.createElement(
+	                    "span",
+	                    { id: "value" },
+	                    value
+	                ),
+	                _react3.default.createElement(
+	                    "button",
+	                    { id: "add", onClick: onAdd },
+	                    "+"
+	                ),
+	                _react3.default.createElement(
+	                    "button",
+	                    { id: "sub", onClick: onSub },
+	                    "-"
+	                )
+	            );
+	        }
+	    }]);
+
+	    return App;
+	}(_react2.Component));
+
+	// const App = React.createClass({
+	//
+	//     add:function () {
+	//         this.props.onAdd();
+	//     },
+	//     sub:function () {
+	//       this.props.onSub();
+	//     },
+	//     render: function(){
+	//         return (
+	//             <div>
+	//                 <span id="value">{this.props.value}</span>
+	//                 <button id="add" onClick={this.add}>+</button>
+	//                 <button id="sub" onClick={this.sub}>-</button>
+	//             </div>
+	//         )
+	//     }
+	// });
+
 
 	exports.default = App;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(81)(module)))
@@ -2366,11 +2401,11 @@ webpackJsonp([1],[
 
 	'use strict';
 
-	var _react = __webpack_require__(51);
+	var _react = __webpack_require__(50);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDom = __webpack_require__(43);
+	var _reactDom = __webpack_require__(58);
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -2877,9 +2912,9 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseTimes = __webpack_require__(203),
-	    isArguments = __webpack_require__(57),
+	    isArguments = __webpack_require__(56),
 	    isArray = __webpack_require__(19),
-	    isIndex = __webpack_require__(56);
+	    isIndex = __webpack_require__(55);
 
 	/** Used for built-in method references. */
 	var objectProto = Object.prototype;
@@ -3429,7 +3464,7 @@ webpackJsonp([1],[
 /* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isLength = __webpack_require__(58),
+	var isLength = __webpack_require__(57),
 	    isObjectLike = __webpack_require__(40);
 
 	/** `Object#toString` result references. */
@@ -3675,7 +3710,7 @@ webpackJsonp([1],[
 /* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Symbol = __webpack_require__(55),
+	var Symbol = __webpack_require__(54),
 	    isSymbol = __webpack_require__(41);
 
 	/** Used as references for various `Number` constants. */
@@ -3854,7 +3889,7 @@ webpackJsonp([1],[
 /* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Symbol = __webpack_require__(55),
+	var Symbol = __webpack_require__(54),
 	    Uint8Array = __webpack_require__(179),
 	    eq = __webpack_require__(39),
 	    equalArrays = __webpack_require__(100),
@@ -4100,7 +4135,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var DataView = __webpack_require__(175),
-	    Map = __webpack_require__(53),
+	    Map = __webpack_require__(52),
 	    Promise = __webpack_require__(177),
 	    Set = __webpack_require__(178),
 	    WeakMap = __webpack_require__(180),
@@ -4194,11 +4229,11 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var castPath = __webpack_require__(99),
-	    isArguments = __webpack_require__(57),
+	    isArguments = __webpack_require__(56),
 	    isArray = __webpack_require__(19),
-	    isIndex = __webpack_require__(56),
+	    isIndex = __webpack_require__(55),
 	    isKey = __webpack_require__(36),
-	    isLength = __webpack_require__(58),
+	    isLength = __webpack_require__(57),
 	    toKey = __webpack_require__(38);
 
 	/**
@@ -4373,8 +4408,8 @@ webpackJsonp([1],[
 /* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Symbol = __webpack_require__(55),
-	    isArguments = __webpack_require__(57),
+	var Symbol = __webpack_require__(54),
+	    isArguments = __webpack_require__(56),
 	    isArray = __webpack_require__(19);
 
 	/** Built-in value references. */
@@ -4401,7 +4436,7 @@ webpackJsonp([1],[
 
 	var eq = __webpack_require__(39),
 	    isArrayLike = __webpack_require__(26),
-	    isIndex = __webpack_require__(56),
+	    isIndex = __webpack_require__(55),
 	    isObject = __webpack_require__(22);
 
 	/**
@@ -4620,7 +4655,7 @@ webpackJsonp([1],[
 
 	var Hash = __webpack_require__(176),
 	    ListCache = __webpack_require__(33),
-	    Map = __webpack_require__(53);
+	    Map = __webpack_require__(52);
 
 	/**
 	 * Removes all key-value entries from the map.
@@ -4970,8 +5005,8 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var ListCache = __webpack_require__(33),
-	    Map = __webpack_require__(53),
-	    MapCache = __webpack_require__(54);
+	    Map = __webpack_require__(52),
+	    MapCache = __webpack_require__(53);
 
 	/** Used as the size to enable large array optimizations. */
 	var LARGE_ARRAY_SIZE = 200;
@@ -5403,7 +5438,7 @@ webpackJsonp([1],[
 /* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var MapCache = __webpack_require__(54);
+	var MapCache = __webpack_require__(53);
 
 	/** Used as the `TypeError` message for "Functions" methods. */
 	var FUNC_ERROR_TEXT = 'Expected a function';
@@ -6681,11 +6716,11 @@ webpackJsonp([1],[
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _react = __webpack_require__(51);
+	var _react = __webpack_require__(50);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDom = __webpack_require__(43);
+	var _reactDom = __webpack_require__(58);
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 

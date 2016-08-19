@@ -93,7 +93,9 @@ build/Release
 ./*/node_modules
 node_modules
 jspm_packages
-./*/public/dist/
+dist
+./demo2/public/dist
+./demo2/public/dist/
 # Optional npm cache directory
 .npm
 

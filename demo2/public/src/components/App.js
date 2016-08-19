@@ -1,23 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, {Component} from 'react';
 
-const App = React.createClass({
-
-    add:function () {
-        this.props.onAdd();
-    },
-    sub:function () {
-      this.props.onSub();
-    },
-    render: function(){
+class App extends Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        const {value,onAdd,onSub} = this.props;
         return (
             <div>
-                <span id="value">{this.props.value}</span>
-                <button id="add" onClick={this.add}>+</button>
-                <button id="sub" onClick={this.sub}>-</button>
+                <span id="value">{value}</span>
+                <button id="add" onClick={onAdd}>+</button>
+                <button id="sub" onClick={onSub}>-</button>
             </div>
         )
     }
-});
+}
 
 export default App;
